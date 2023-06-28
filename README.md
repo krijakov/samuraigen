@@ -3,10 +3,10 @@ Transformer based samurai name generator with a custom hiragana based tokenizer
 
 Some names generated:
 
-* hyora masa
-* mi yoshitsu
-* hona yoshisama
-* ki yoshisa
-* shi
-* min yoshi
-* nasawa shiyoshimo
+* Hyora Masa
+* Mi Yoshitsu
+* Hona Yoshisama
+* Ki Yoshisa
+* Shi
+* Min Yoshi
+* Nasawa Shiyoshimo
