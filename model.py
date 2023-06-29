@@ -36,11 +36,11 @@ class SingleHeadAttention(nn.Module):
 
         assert config.n_emb % config.head_size == 0 # to ensure the ability to concatanate them later
         self.n_emb = config.n_emb
-        self.n_head = config.head_size
+        self.head_size = config.head_size
         # init the linear layers:
-        self.key = nn.Linear(config.n_emb, self.n_head, bias=False)
-        self.value = nn.Linear(config.n_emb, self.n_head, bias=False)
-        self.query = nn.Linear(config.n_emb, self.n_head, bias=False)
+        self.key = nn.Linear(config.n_emb, self.head_size, bias=False)
+        self.value = nn.Linear(config.n_emb, self.head_size, bias=False)
+        self.query = nn.Linear(config.n_emb, self.head_size, bias=False)
 
         self.register_buffer("causal", torch.ones(config.block_size, config.block_size))
 
